@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&display=swap');
+
+:root {
+    --light-blue: #1283b9;
+    --dark-blue: #06435f;
+    --font: "Marhey", sans-serif;
+}
+
+header {
+    height: 400px;
+    background-image: url("../img/balaton_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: var(--font);
+    letter-spacing: 3px;
+}
+
+header h1 {
+    text-shadow: 5px 5px 10px #000;
+}
+
+nav {
+    background-color: var(--dark-blue);
+}
+
+a:focus {
+    background-color: rgba(18, 131, 185, 0.8)
+}
+
+h2 {
+    font-variant: small-caps;
+    color: var(--light-blue);
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    font-weight: bold;
+    font-family: var(--font);
+}
+
+.col-12 img {
+    box-shadow: 1px 1px 3px 3px var(--dark-blue);
+}
+
+table {
+    width: 80%;
+    margin: auto;
+    box-shadow: 1px 1px 10px 10px var(--dark-blue);
+}
+
+td, th {
+    padding: 10px;
+}
+
+thead tr:first-child {
+    background-color: var(--light-blue);
+}
+
+thead tr:last-child {
+    background-color: var(--dark-blue);
+}
+
+thead tr, tbody tr td:first-child {
+    font-family: var(--font);
+}
+
+tbody tr td:first-child {
+    color: var(--dark-blue);
+    font-weight: bold;
+}
+
+th {
+    text-align: center;
+    color: #fff;
+}
+
+tbody tr td {
+    background-color: rgba(18, 131, 185, 0.1);
+}
+
+tbody tr td:hover {
+    background-color: rgba(18, 131, 185, 0.7);
+}
+
+tbody tr @media(max-width: 992px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+}
